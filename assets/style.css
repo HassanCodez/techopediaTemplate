@@ -10,7 +10,9 @@ body {
   padding: 0;
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
+  line-height: 20px;
 }
+
 
 /* NAVBAR */
 .navBar {
@@ -413,6 +415,62 @@ margin: 0 10px;
   background-color: #e25c5c;
   color: white;
 }
+.newsletterSection{
+  background: #e5effc;
+  padding: 50px 0;
+}
+.newsletterSection ._container{
+  display: flex;
+  justify-content: space-between;
+}
+.imgContainer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.subscription{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.inputContainer{
+  border: 1px solid #cecdcd;
+  background: #fff;
+  padding: 2px;
+}
+.inputContainer input{
+width: 80%;
+height: 2.5rem;
+border: none;
+outline: none;
+font-size: 16px;
+}
+.inputContainer button{
+  background: #e25c5c;
+  color: white;
+  border:none;
+  cursor: pointer;
+  outline: none;
+  border-radius: 5px;
+  font-weight: 600;
+  width: 18%;
+  height: 2.5rem;
+
+}
+.responsiveSubButton{
+  display: none;
+}
+.checkboxesContainer{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.blueprint{
+  color: gray;
+  font-size: 12px;
+  text-align: center;
+}
 @media only screen and (max-width: 764px) {
   ._container {
     margin: 5px;
@@ -481,4 +539,31 @@ margin: 0 10px;
     align-items: center;
     gap: 15px;
   }
+  .newsletterSection ._container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+ .imgContainer img{
+  margin-top: 10px;
+  width: 70%;
+ }
+ .inputContainer button{
+  display: none;
+}
+.inputContainer input{
+  width: 100%;
+}
+.responsiveSubButton{
+  display: block;
+  width: 100%;
+  margin: 10px 0;
+  height: 2.5rem;
+  border-radius: 5px;
+  color: white;
+  background: #e25c5c;
+  font-size: 18px;
+  border: none;
+  outline: none;
+}
 }
